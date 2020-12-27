@@ -1,3 +1,3 @@
-# reduce
+# Reduce!
 
 JavaScript Array.reduce method exercises.
