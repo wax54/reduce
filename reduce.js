@@ -36,7 +36,6 @@ function vowelCount(str) {
     const arrFromStr = Array.from(str.toLowerCase());
     const vowels = 'aeiou';
     return arrFromStr.reduce(function(result, nextLetter){
-
         let vowelIndex = vowels.indexOf(nextLetter);
         if(vowelIndex == -1){
             return result;
@@ -70,7 +69,6 @@ Examples:
 */
 
 function addKeyAndValue(arr, key, value) {
-    console.log('old arr',arr,key,value);
     arr.reduce(function(input, next){
         next[key] = input;
         return input;
