@@ -33,22 +33,21 @@ Examples:
 */
 
 function vowelCount(str) {
-    const arrFromStr = Array.from(str.toLowerCase);
+    const arrFromStr = Array.from(str.toLowerCase());
     const vowels = 'aeiou';
-    let x=arrFromStr.reduce(function(result, nextLetter){
+    return arrFromStr.reduce(function(result, nextLetter){
+
         let vowelIndex = vowels.indexOf(nextLetter);
         if(vowelIndex == -1){
             return result;
         }else{
             const vowel = vowels[vowelIndex];
-            console.log('vowel')
             result[vowel] ? result[vowel]++ : result[vowel] = 1;
             return result;
         }
         
     },{});
-    console.log(x);
-    
+  
 }
 
 /*
